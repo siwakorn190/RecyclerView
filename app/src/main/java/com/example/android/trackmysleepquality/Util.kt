@@ -23,6 +23,8 @@ import android.text.Html
 import android.text.Spanned
 import com.example.android.trackmysleepquality.database.SleepNight
 import java.text.SimpleDateFormat
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 //import java.util.concurrent.TimeUnit
 //import java.util.*
 
@@ -133,4 +135,5 @@ fun formatNights(nights: List<SleepNight>, resources: Resources): Spanned {
         return Html.fromHtml(sb.toString())
     }
 }
+class TextItemViewHolder(val textView: TextView): RecyclerView.ViewHolder(textView)
 
